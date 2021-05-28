@@ -6,7 +6,7 @@ h5,
 h6 {
   font-weight: 300;
   margin-top: 0;
-  line-height: 1.2;
+  line-height: 1.2em;
   margin-bottom: 0.3em;
 }
 
@@ -20,6 +20,7 @@ h4 {
 
 a {
   color: rgb(100, 80, 200);
+  text-decoration: underline;
 }
 
 p {
@@ -39,7 +40,7 @@ body {
 .navigation {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 100px;
+  margin-bottom: 4em;
 }
 
 .navigationItem {
@@ -59,8 +60,8 @@ body {
 .pageHead {
   display: flex;
   align-items: center;
-  border-bottom: 1px dotted black;
-  margin-bottom: 20px;
+  border-bottom: 0.1em dotted black;
+  margin-bottom: 1em;
 }
 
 .pageHeadFace {
@@ -75,7 +76,7 @@ body {
 }
 
 .pageDescription {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 .pageContacts {
@@ -83,7 +84,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   border: grey dotted;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em;
 }
 
 .pageContactItem {
@@ -94,14 +95,14 @@ body {
 .pageContactItem img {
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin-right: 0.5em;
 }
 
 .pageWrapper {
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  margin: 30px auto;
+  margin: 1.2em auto;
   padding: 0 0.6em;
 }
 
