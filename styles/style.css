@@ -51,19 +51,19 @@ body {
   text-decoration: underline;
 }
 
-.infoCard {
+.page {
   display: flex;
   flex-direction: column;
 }
 
-.infoCardHead {
+.pageHead {
   display: flex;
   align-items: center;
   border-bottom: 1px dotted black;
   margin-bottom: 20px;
 }
 
-.infoCardHeadFace {
+.pageHeadFace {
   display: block;
   object-fit: cover;
   width: 120px;
@@ -74,22 +74,24 @@ body {
   margin-right: 1em;
 }
 
-.infoCardDescription {
-  margin-bottom: 50px;
+.pageDescription {
+  margin-bottom: 20px;
 }
 
-.infoCardContacts {
+.pageContacts {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border: grey dotted;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
-.infoCardContactItem {
+.pageContactItem {
   display: flex;
   align-items: center;
 }
 
-.infoCardContactItem img {
+.pageContactItem img {
   height: 50px;
   width: 50px;
   margin-right: 10px;
@@ -104,14 +106,23 @@ body {
 }
 
 @media (max-width: 550px) {
-  .infoCardContacts {
+  .pageContacts {
     flex-direction: column;
     margin: 0 auto;
   }
-  .infoCardContactItem {
+  .pageContactItem {
     margin: 0.3em;
   }
-  .infoCardDescription {
+  .pageDescription {
     margin-bottom: 10px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .navigationItem {
+    margin: 0 0 1.2em 0;
   }
 }

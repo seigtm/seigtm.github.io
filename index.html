@@ -4,33 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="pages/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js"></script>
     <title>seigtm</title>
   </head>
-  <body>
+  <body onload="onLoad()">
     <div class="pageWrapper">
       <nav class="navigation">
-        <a class="navigationItem navigationItemCurrent" href="index.html"
-          >Главная</a
-        >
-        <a class="navigationItem" href="pages/about.html">Обо мне</a>
-        <a class="navigationItem" href="pages/contacts.html">Контакты</a>
-        <a class="navigationItem" href="pages/projects.html">Проекты</a>
+        <a class="navigationItem" id="navItemMain" onclick="changePage(this)">Главная</a>
+        <a class="navigationItem" id="navItemAbout" onclick="changePage(this)">Обо мне</a>
+        <a class="navigationItem" id="navItemContacts" onclick="changePage(this)">Контакты</a>
+        <a class="navigationItem" id="navItemProjects" onclick="changePage(this)">Проекты</a>
       </nav>
 
-      <main class="infoCard">
-        <section class="infoCardHead">
+      <main class="page" id="pageMain">
+        <section class="pageHead">
           <img
             src="src/face.jpg"
             alt="The picture of my face"
-            class="infoCardHeadFace"
+            class="pageHeadFace"
           />
           <div>
             <h2>Баранов Константин</h2>
             <h4>Junior C++ разработчик</h4>
           </div>
         </section>
-        <section class="infoCardDescription">
+        <section class="pageDescription">
           <p>
             Привет! Я junior разработчик из г. Санкт-Петербург, Россия. В данный
             момент активно изучаю языки C++, C#.
@@ -54,24 +53,36 @@
             &#128516;.
           </p>
         </section>
-        <section class="infoCardContacts">
-          <div class="infoCardContactItem">
+        <section class="pageContacts">
+          <div class="pageContactItem">
             <img src="src/icons/github.png" />
             <a href="https://github.com/seigtm">GitHub</a>
           </div>
-          <div class="infoCardContactItem">
+          <div class="pageContactItem">
             <img src="src/icons/instagram.png" />
             <a href="https://www.instagram.com/seigtm/">Instagram</a>
           </div>
-          <div class="infoCardContactItem">
+          <div class="pageContactItem">
             <img src="src/icons/telegram.png" />
             <a href="https://t.me/seigtm">Telegram</a>
           </div>
-          <div class="infoCardContactItem">
+          <div class="pageContactItem">
             <img src="src/icons/vk.png" />
             <a href="https://vk.com/theseig">VK</a>
           </div>
         </section>
+      </main>
+
+      <main class="page" id="pageAboutMe">
+        <h1>About me</h1>
+      </main>
+
+      <main class="page" id="pageContacts">
+        <h1>Contacts</h1>
+      </main>
+
+      <main class="page" id="pageProjects">
+        <h1>Projects</h1>
       </main>
     </div>
   </body>
