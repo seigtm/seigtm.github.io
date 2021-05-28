@@ -4,9 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/style.css" />
     <title>seigtm</title>
   </head>
   <body>
-    <a href="pages/about.html">About</a>
+    <div class="pageWrapper">
+      <nav class="navigation">
+        <a class="navigationItem navigationItemCurrent" href="index.html"
+          >Главная</a
+        >
+        <a class="navigationItem" href="pages/about.html">Обо мне</a>
+        <a class="navigationItem" href="pages/contacts.html">Контакты</a>
+        <a class="navigationItem" href="pages/projects.html">Проекты</a>
+      </nav>
+
+      <main class="infoCard">
+        <section class="infoCardHead">
+          <img
+            src="src/face.jpg"
+            alt="The picture of my face"
+            class="infoCardHeadFace"
+          />
+          <div>
+            <h2>Баранов Константин</h2>
+            <h4>Junior C++ разработчик</h4>
+          </div>
+        </section>
+        <section class="infoCardDescription">
+          <p>
+            Привет! Я junior разработчик из г. Санкт-Петербург, Россия. В данный
+            момент активно изучаю языки C++, C#.
+          </p>
+          <p>
+            Являюсь студентом
+            <a href="https://pkgh.edu.ru/">
+              Политехнического колледжа городского хозяйства
+            </a>
+            по специальности "Программист-техник".
+          </p>
+          <p>
+            <i>
+              Предлагаю вам ознакомиться с моими
+              <a href="pages/projects.html">проектами</a>. Если вас уже
+              заинтересовала моя вакансия, можете
+              <a href="pages/about.html">узнать обо мне побольше</a>, либо же
+              сразу
+              <a href="pages/contacts.html">связаться со мной</a>
+            </i>
+            &#128516;.
+          </p>
+        </section>
+        <section class="infoCardContacts">
+          <div class="infoCardContactItem">
+            <img src="src/icons/github.png" />
+            <a href="https://github.com/seigtm">GitHub</a>
+          </div>
+          <div class="infoCardContactItem">
+            <img src="src/icons/instagram.png" />
+            <a href="https://www.instagram.com/seigtm/">Instagram</a>
+          </div>
+          <div class="infoCardContactItem">
+            <img src="src/icons/telegram.png" />
+            <a href="https://t.me/seigtm">Telegram</a>
+          </div>
+          <div class="infoCardContactItem">
+            <img src="src/icons/vk.png" />
+            <a href="https://vk.com/theseig">VK</a>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
