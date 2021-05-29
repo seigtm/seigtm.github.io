@@ -11,10 +11,24 @@
   <body onload="onLoad()">
     <div class="pageWrapper">
       <nav class="navigation">
-        <a class="navigationItem" id="navItemMain" onclick="changePage(this)">Главная</a>
-        <a class="navigationItem" id="navItemAbout" onclick="changePage(this)">Обо мне</a>
-        <a class="navigationItem" id="navItemContacts" onclick="changePage(this)">Контакты</a>
-        <a class="navigationItem" id="navItemProjects" onclick="changePage(this)">Проекты</a>
+        <a class="navigationItem" id="navItemMain" onclick="changePage(this)"
+          >Главная</a
+        >
+        <a class="navigationItem" id="navItemAbout" onclick="changePage(this)"
+          >Обо мне</a
+        >
+        <a
+          class="navigationItem"
+          id="navItemContacts"
+          onclick="changePage(this)"
+          >Контакты</a
+        >
+        <a
+          class="navigationItem"
+          id="navItemProjects"
+          onclick="changePage(this)"
+          >Проекты</a
+        >
       </nav>
 
       <main class="page" id="pageMain">
@@ -53,37 +67,251 @@
             &#128516;.
           </p>
         </section>
-        <section class="pageContacts">
-          <div class="pageContactItem">
-            <img src="src/icons/github.png" />
-            <a href="https://github.com/seigtm">GitHub</a>
-          </div>
-          <div class="pageContactItem">
-            <img src="src/icons/instagram.png" />
-            <a href="https://www.instagram.com/seigtm/">Instagram</a>
-          </div>
-          <div class="pageContactItem">
-            <img src="src/icons/telegram.png" />
-            <a href="https://t.me/seigtm">Telegram</a>
-          </div>
-          <div class="pageContactItem">
-            <img src="src/icons/vk.png" />
-            <a href="https://vk.com/theseig">VK</a>
-          </div>
-        </section>
       </main>
 
       <main class="page" id="pageAboutMe">
-        <h1>About me</h1>
+        <h1>С чего бы начать...</h1>
+
+        <section class="pageDescription">
+          <p>
+            Как уже было сказано, меня зовут Константин, мне 19 лет и я
+            начинающий разработчик.
+          </p>
+          <p>
+            На данный момент активно изучаю языки программирования C++ и C#, но
+            также увлекаюсь версткой сайтов (HTML, CSS, JS), Markdown.
+          </p>
+          <p>
+            Разрабатываю мелкие приложения под Windows на Qt/C++, на C#
+            предпочитаю WPF.
+          </p>
+          <p>
+            В основном пишу проекты, которые задают мне в
+            <a href="https://pkgh.edu.ru/">моём учебном учреждении</a>, но
+            иногда (при свободном времени) пишу и собственные проекты, чтобы
+            укреплять свои навыки написания полноценных приложений.
+          </p>
+          <p>
+            Окончил курсы Новосибирской академии (HTML, CSS, C#, Unity), курсы
+            ИТМО (C и C++).
+          </p>
+          <p>
+            Хорошо понимаю принципы ООП, разработки графического интерфейса
+            приложений.
+          </p>
+          <p>
+            Работал с базами данных SQL и нередко применял их в своих проектах.
+          </p>
+          <p>
+            Полюбил писать максимально читаемый и красивый код после прочтения
+            книги
+            <a href="https://www.litres.ru/yohannes-yander/programmirovanie-bez-durakov-23889464/otzivi/">
+              "Программирование без дураков"
+            </a>
+            Катрина Пассига и Йоханесса Яндера.
+          </p>
+          <p>
+            В данный момент занят поиском работы/подработки/стажировки
+            разработчиком на C++/C#.
+          </p>
+        </section>
       </main>
 
       <main class="page" id="pageContacts">
-        <h1>Contacts</h1>
+        <h4 style="text-align: center;">
+          Свяжись со мной:
+        </h4>
       </main>
 
       <main class="page" id="pageProjects">
-        <h1>Projects</h1>
+        <h1>Что не стыдно показать...</h1>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/Complex">
+            Класс комплексных чисел на C++
+          </a>
+          <img src="src/complex.png" alt="Класс комплексных чисел на C++" />
+          <p>Данный проект представляет собой класс коплексных чисел на C++.</p>
+          <p>
+            Поддерживаются все необходимые операции для работы с такими числами
+            (математические, побитовые и т.д.).
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/Polynomial">
+            Класс полиномов (многочленов) на C++
+          </a>
+          <img src="src/polynomial.gif" alt="Класс полиномов (многочленов) на C++" />
+          <p>Моя реализация класса многочленов на C++.</p>
+          <p>
+            Так же, как и в случае с классом комплексных чисел, поддерживаются
+            все базовые операции.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/Qt-WMS"> WMS на C++/Qt </a>
+          <img src="src/wms.png" alt="WMS на C++/Qt" />
+          <p>
+            Данный проект был выполнен как курсовая работа в моём колледже.
+            Представляет собой автоматизированную систему управления складским
+            помещением.
+          </p>
+          <p>
+            Приложение призвано упростить ведение отчётности о поставках и
+            отгрузках товара в/со склада, а также обладает функционалом по
+            созданию накладных и сохранению их в файл.
+          </p>
+          <p>
+            В приложении реализована регистрация и авторизация посредством
+            логинов и паролей. Для хранения данных пользователей (пароли
+            хешируются по Sha256), а также всей информации о поставщиках,
+            товарах, отправленных и принятых товарах используется база данных на
+            SQLite3.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/BitwiseAddition">
+            Побитовое сложение на C++
+          </a>
+          <img src="src/bitwise.png" alt="Побитовое сложение на C++" />
+          <p>
+            В процессе изучения побитовых операций, мною была реализована
+            функция побитового сложения двух целочисленных.
+          </p>
+          <p>
+            Для реализации применялись операторы исключающего "или", "И" и
+            побитового сдвига.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/FlexTemplateWebsite">
+            CSS Flex Website
+          </a>
+          <img src="src/flex.png" alt="CSS Flex Website" />
+          <p>
+            Изучая CSS, я открыл для себя невероятные гибкие блоки Flexbox и не
+            мог не попытаться сделать адаптивный сайт с их применением.
+          </p>
+          <p>Это мой первый опыт создания макета одностраничного сайта.</p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/DirectoryFilesList">
+            Список файлов в заданной директории C++
+          </a>
+          <img src="src/dir.png" alt="Список файлов в заданной директории C++" />
+          <p>
+            Среди нововведений 17-го стандарта C++ мне приглянулась библиотека
+            <a href="https://en.cppreference.com/w/cpp/filesystem"
+              >std::filesystem</a
+            >.
+          </p>
+          <p>
+            В итоге, я написал простую функцию для получения списка файлов в
+            заданой директории. Параметрами функции является директория, в
+            которой необходимо осуществлять поиск, а также вектор строк
+            (расширений) файлов, которые мы хотим найти.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/StrategyFileEncrypter">
+            Шифрование текстовых файлов (паттерн стратегия) на C++
+          </a>
+          <img src="src/encr.png" alt="Шифрование текстовых файлов (паттерн стратегия) на C++" />
+          <p>
+            Изучая паттерны, я реализовал классы для шифрования текстовых файлов
+            различными стратегиями.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/RSA">RSA шифрование на C#</a>
+          <img src="src/rsa.png" alt="RSA шифрование на C#" />
+          <p>
+            Преподаватель по дисциплине "Информационная безопасность" дал мне
+            задание - реализовать простую версию RSA-шифрования неких сообщений,
+            коими в данном случае являются числа.
+          </p>
+          <p>
+            В итоге я написал код, позволяющий это сделать, а также записывающий
+            открытый и закрытый ключи RSA в текстовые файлы.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/BidirectionalRingList">
+            Двусвязный кольцевой список на C++
+          </a>
+          <img src="src/list.png" alt="Двусвязный кольцевой список на C++" />
+          <p>
+            В этот раз уже другой преподаватель (по дисциплине
+            "Программирование") дал мне задачу. Необходимо было реализовать
+            структуру данных, а точнее - двусвязный кольцевой список.
+          </p>
+          <p>
+            В результате мною была описана вся основная логика с мелкими
+            деталями. Тогда я хорошо натренировал свои навыки работы с
+            указателями.
+          </p>
+          <p>
+            Хоть проект и старый, но он вызывает у меня ностальгические чувства,
+            потому я и включил его в этот список.
+          </p>
+        </div>
+
+        <div class="projectCard">
+          <a href="https://github.com/seigtm/Prime-And-Perfect-Numbers">
+            Простые и совершенные числа C++/Qt
+          </a>
+          <img src="src/primeandperfect.png" alt="Простые и совершенные числа C++/Qt" />
+          <p>Ну и продолжая тему ностальгии...</p>
+          <p>
+            Данный проект представляет собой простое приложение на Qt, которое
+            призвано помочь определить, является ли число простым или
+            совершенным (в зависимости от выбранного пользователем действия).
+          </p>
+          <p>
+            В программе так же можно найти данные числа в заданном диапазоне (от
+            2 до n). Алгоритм нахождения чисел пошагово визуализируется в
+            табличной форме.
+          </p>
+          <p>
+            Также приложение обладает краткой справкой о том, что вообще из себя
+            представляют простые и совершенные числа.
+          </p>
+          <p>
+            В те времена я просто тестировал возможности Qt и закреплял свои
+            навыки работы с ним. Проект стар и дряхл, но всё же заслуживает
+            вашего внимания.
+          </p>
+        </div>
+
+        <p>Остались вопросы? Напиши мне:</p>
       </main>
+
+      <section class="pageContacts">
+        <div class="pageContactItem">
+          <img src="src/icons/github.png" />
+          <a href="https://github.com/seigtm">GitHub</a>
+        </div>
+        <div class="pageContactItem">
+          <img src="src/icons/instagram.png" />
+          <a href="https://www.instagram.com/seigtm/">Instagram</a>
+        </div>
+        <div class="pageContactItem">
+          <img src="src/icons/telegram.png" />
+          <a href="https://t.me/seigtm">Telegram</a>
+        </div>
+        <div class="pageContactItem">
+          <img src="src/icons/vk.png" />
+          <a href="https://vk.com/theseig">VK</a>
+        </div>
+      </section>
     </div>
   </body>
 </html>
