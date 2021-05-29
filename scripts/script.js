@@ -29,6 +29,9 @@ var onLoad = function () {
 };
 
 var changePage = function (obj) {
+  // Scroll to the top of the page.
+  window.scrollTo(0, 0);
+
   // Changing text decoration of menu items.
   currentNavItem.style.textDecoration = "none";
   obj.style.textDecoration = "underline";
