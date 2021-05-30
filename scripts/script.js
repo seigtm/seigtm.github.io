@@ -37,30 +37,28 @@ var changePage = function (obj) {
   obj.style.textDecoration = "underline";
   currentNavItem = obj;
 
-  // Showing selected page and hiding previous.
+  // Hiding current page.
+  pages[currentPageType].style.display = "none";
+
+  // Changing current page type.
   switch (obj.id) {
     case "navItemMain":
-      pages[currentPageType].style.display = "none";
-      pages[pagesTypes.MAIN].style.display = "flex";
       currentPageType = pagesTypes.MAIN;
       break;
 
     case "navItemAbout":
-      pages[currentPageType].style.display = "none";
-      pages[pagesTypes.ABOUTME].style.display = "flex";
       currentPageType = pagesTypes.ABOUTME;
       break;
 
     case "navItemContacts":
-      pages[currentPageType].style.display = "none";
-      pages[pagesTypes.CONTACTS].style.display = "flex";
       currentPageType = pagesTypes.CONTACTS;
       break;
 
     case "navItemProjects":
-      pages[currentPageType].style.display = "none";
-      pages[pagesTypes.PROJECTS].style.display = "flex";
       currentPageType = pagesTypes.PROJECTS;
       break;
   }
+
+  // Showing another page depending on new current page type.
+  pages[currentPageType].style.display = "flex";
 };
