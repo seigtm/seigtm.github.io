@@ -5,31 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="src/icons/favicon.ico"/>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="src/icons/favicon.ico"
+    />
     <script src="scripts/script.js"></script>
     <title>seigtm</title>
   </head>
   <body onload="onLoad()">
     <div class="pageWrapper">
       <nav class="navigation">
-        <a class="navigationItem" id="navItemMain" onclick="changePage(this)"
-          >Главная</a
-        >
-        <a class="navigationItem" id="navItemAbout" onclick="changePage(this)"
-          >Обо мне</a
-        >
+        <a class="navigationItem" id="navItemMain" onclick="changePage(this)">
+          Главная
+        </a>
+        <a class="navigationItem" id="navItemAbout" onclick="changePage(this)">
+          Обо мне
+        </a>
         <a
           class="navigationItem"
           id="navItemContacts"
           onclick="changePage(this)"
-          >Контакты</a
         >
+          Контакты
+        </a>
         <a
           class="navigationItem"
           id="navItemProjects"
           onclick="changePage(this)"
-          >Проекты</a
         >
+          Проекты
+        </a>
+        <a class="navigationItem" id="navItemResume" href="src/resume.pdf">
+          Резюме
+        </a>
       </nav>
 
       <main class="page" id="pageMain">
@@ -106,7 +115,9 @@
           <p>
             Полюбил писать максимально читаемый и красивый код после прочтения
             книги
-            <a href="https://www.litres.ru/yohannes-yander/programmirovanie-bez-durakov-23889464/otzivi/">
+            <a
+              href="https://www.litres.ru/yohannes-yander/programmirovanie-bez-durakov-23889464/otzivi/"
+            >
               "Программирование без дураков"
             </a>
             Катрина Пассига и Йоханесса Яндера.
@@ -119,9 +130,7 @@
       </main>
 
       <main class="page" id="pageContacts">
-        <h4 style="text-align: center;">
-          Свяжись со мной:
-        </h4>
+        <h4 style="text-align: center">Свяжись со мной:</h4>
       </main>
 
       <main class="page" id="pageProjects">
@@ -132,7 +141,9 @@
             Класс комплексных чисел на C++
           </a>
           <img src="src/complex.png" alt="Класс комплексных чисел на C++" />
-          <p>Данный проект представляет собой класс комплексных чисел на C++.</p>
+          <p>
+            Данный проект представляет собой класс комплексных чисел на C++.
+          </p>
           <p>
             Поддерживаются все необходимые операции для работы с такими числами
             (математические, побитовые и т.д.).
@@ -143,7 +154,10 @@
           <a href="https://github.com/seigtm/Polynomial">
             Класс полиномов (многочленов) на C++
           </a>
-          <img src="src/polynomial.gif" alt="Класс полиномов (многочленов) на C++" />
+          <img
+            src="src/polynomial.gif"
+            alt="Класс полиномов (многочленов) на C++"
+          />
           <p>Моя реализация класса многочленов на C++.</p>
           <p>
             Так же, как и в случае с классом комплексных чисел, поддерживаются
@@ -204,7 +218,10 @@
           <a href="https://github.com/seigtm/DirectoryFilesList">
             Список файлов в заданной директории C++
           </a>
-          <img src="src/dir.png" alt="Список файлов в заданной директории C++" />
+          <img
+            src="src/dir.png"
+            alt="Список файлов в заданной директории C++"
+          />
           <p>
             Среди нововведений 17-го стандарта C++ мне приглянулась библиотека
             <a href="https://en.cppreference.com/w/cpp/filesystem"
@@ -223,7 +240,10 @@
           <a href="https://github.com/seigtm/StrategyFileEncrypter">
             Шифрование текстовых файлов (паттерн стратегия) на C++
           </a>
-          <img src="src/encr.png" alt="Шифрование текстовых файлов (паттерн стратегия) на C++" />
+          <img
+            src="src/encr.png"
+            alt="Шифрование текстовых файлов (паттерн стратегия) на C++"
+          />
           <p>
             Изучая паттерны, я реализовал классы для шифрования текстовых файлов
             различными стратегиями.
@@ -269,7 +289,10 @@
           <a href="https://github.com/seigtm/Prime-And-Perfect-Numbers">
             Простые и совершенные числа C++/Qt
           </a>
-          <img src="src/primeandperfect.png" alt="Простые и совершенные числа C++/Qt" />
+          <img
+            src="src/primeandperfect.png"
+            alt="Простые и совершенные числа C++/Qt"
+          />
           <p>Ну и продолжая тему ностальгии...</p>
           <p>
             Данный проект представляет собой простое приложение на Qt, которое
