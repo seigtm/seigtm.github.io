@@ -8,14 +8,12 @@ const translations = {
         "nav_projects": "Projects",
         "nav_education": "Education",
         "nav_contacts": "Contacts",
-        "resume_pdf": "PDF Resume",
 
         // Hero section
         "hero_name": "Konstantin Baranov",
         "hero_title": "C++ Software Engineer",
         "hero_subtitle": "Systems programming, cross-platform development",
-        "hero_btn_experience": "Experience",
-        "hero_btn_projects": "Projects",
+        "resume_pdf": "PDF Resume",
         "hero_btn_contact": "Contacts",
 
         // About section
@@ -184,14 +182,12 @@ const translations = {
         "nav_projects": "Проекты",
         "nav_education": "Образование",
         "nav_contacts": "Контакты",
-        "resume_pdf": "Резюме в PDF",
 
         // Hero section
         "hero_name": "Константин Баранов",
         "hero_title": "Инженер-программист C++",
         "hero_subtitle": "Системное программирование, кросс-платформенная разработка",
-        "hero_btn_experience": "Опыт",
-        "hero_btn_projects": "Проекты",
+        "resume_pdf": "Резюме в PDF",
         "hero_btn_contact": "Связаться",
 
         // About section
