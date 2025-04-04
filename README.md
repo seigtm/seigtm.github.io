@@ -1,10 +1,15 @@
-# [Простой сайт-визитка](https://seigtm.github.io)
+# [Personal Portfolio Website](https://seigtm.github.io)
 
-Данный проект представляет собой простой сайт-визитку с информацией обо мне, моих проектах, способах связи со мной и т.п..
+A modern, responsive portfolio website showcasing my skills, experience, and projects as a C++ Software Engineer. The site is built with HTML5, CSS3, and JavaScript ES6+, featuring bilingual support (English/Russian).
 
-Этот сайт был сделан для финального задания по дисциплине "WEB-Разработка" в моём колледже.
+## 🌟 Features
 
-Просмотреть сайт вы можете перейдя по [этой ссылке](https://seigtm.github.io).
+- Responsive Design.
+- Bilingual Support.
+- Interactive UI.
+- Comprehensive CV.
+- Downloadable PDF Resume in both languages.
 
-_Выражаю свою благодарность [Андрею Журавлёву](https://github.com/andreycrane/)._  
-_Его сайт-проект на GitHub был использован мною как шаблон для оформления собственного._
+## 🌐 Deployment
+
+The website is deployed using GitHub Pages at [seigtm.github.io](https://seigtm.github.io).
