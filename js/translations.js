@@ -19,7 +19,7 @@ const translations = {
         // About section
         "about_title": "About me",
         "about_professional": "Professional path",
-        "about_professional_p1": "At 22, I have already accumulated more than 3 years of commercial software development experience. My professional experience ranges from systems programming to mobile application development.",
+        "about_professional_p1": "At 23, I have already accumulated more than 3 years of commercial software development experience. My professional experience ranges from systems programming to mobile application development.",
         "about_professional_p2": "My technical expertise allows me to solve complex tasks at various levels: from working with kernels and drivers to creating user interfaces. This experience enables me to choose optimal technical solutions for each project, considering all levels of its architecture.",
         "about_education": "Education",
         "about_education_p1": "I hold honors diplomas in 'Software Engineering Technician' and 'Computer Systems Operator' from the St. Petersburg Polytechnic College of Urban Management.",
@@ -193,7 +193,7 @@ const translations = {
         // About section
         "about_title": "Обо мне",
         "about_professional": "Профессиональный путь",
-        "about_professional_p1": "В 22 года у меня уже более 3 лет коммерческого опыта в разработке программного обеспечения. Мой опыт охватывает широкий спектр технических областей — от системного программирования до разработки мобильных приложений.",
+        "about_professional_p1": "В 23 года у меня уже более 3 лет коммерческого опыта в разработке программного обеспечения. Мой опыт охватывает широкий спектр технических областей — от системного программирования до разработки мобильных приложений.",
         "about_professional_p2": "Мои технические знания позволяют решать комплексные задачи на различных уровнях: от работы с ядром и драйверами до создания пользовательских интерфейсов. Этот опыт дает возможность выбирать оптимальные технические решения для каждого проекта, учитывая все уровни его архитектуры.",
         "about_education": "Образование",
         "about_education_p1": "Имею дипломы c отличием по специальностям \"программист-техник\" и \"оператор ЭВМ\" из Санкт-Петербургского Политехнического Колледжа Городского Хозяйства.",
