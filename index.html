@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Константин Баранов | C++ Разработчик</title>
+    <title data-i18n="page_title">Konstantin Baranov | C++ Software Engineer</title>
     <meta name="description"
-        content="C++ разработчик с опытом в системном программировании, кросс-платформенной разработке и создании высокопроизводительных программных решений">
+        content="Konstantin Baranov | C++ Software Engineer | 3+ years of professional experience | Saint Petersburg, Russia | On-site / hybrid / remote | Open to relocation"
+        data-i18n-content="page_description">
     <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
@@ -19,7 +20,6 @@
 
 <body>
     <div class="site-container">
-        <!-- Navigation -->
         <nav id="main-nav" class="main-nav">
             <div class="nav-container">
                 <div class="logo">
@@ -32,9 +32,8 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-item active" data-i18n="nav_home"></a></li>
-                    <li><a href="#about" class="nav-item" data-i18n="nav_about"></a></li>
-                    <li><a href="#experience" class="nav-item" data-i18n="nav_experience"></a></li>
                     <li><a href="#skills" class="nav-item" data-i18n="nav_skills"></a></li>
+                    <li><a href="#experience" class="nav-item" data-i18n="nav_experience"></a></li>
                     <li><a href="#projects" class="nav-item" data-i18n="nav_projects"></a></li>
                     <li><a href="#education" class="nav-item" data-i18n="nav_education"></a></li>
                     <li><a href="#contacts" class="nav-item" data-i18n="nav_contacts"></a></li>
@@ -42,82 +41,90 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
         <main class="content">
-            <!-- Home Section -->
             <section id="home" class="section section-hero">
                 <div class="container">
                     <div class="hero-content">
                         <div class="hero-photo">
-                            <img src="./src/face.jpg" alt="Константин Баранов" class="profile-image">
+                            <img src="./src/face.jpg" alt="Баранов Константин" class="profile-image"
+                                data-i18n-alt="hero_name">
                         </div>
                         <div class="hero-text">
                             <h1 data-i18n="hero_name"></h1>
                             <h2 data-i18n="hero_title"></h2>
                             <p class="subtitle" data-i18n="hero_subtitle"></p>
                             <div class="hero-cta">
-                                <button id="download-pdf-btn" class="btn btn-primary" data-i18n="resume_pdf"></button>
+                                <button id="download-pdf-btn" type="button" class="btn btn-primary"
+                                    data-i18n="resume_pdf"></button>
                                 <a href="#contacts" class="btn btn-outline" data-i18n="hero_btn_contact"></a>
                             </div>
                         </div>
                         <div class="hero-tech-stack">
-                            <div class="tech-badge">C/C++</div>
-                            <div class="tech-badge">Linux</div>
-                            <div class="tech-badge">Android</div>
-                            <div class="tech-badge">Windows</div>
+                            <div class="tech-badge">C++20</div>
+                            <div class="tech-badge">C</div>
                             <div class="tech-badge">Python</div>
-                            <div class="tech-badge">Git</div>
-                            <div class="tech-badge">CMake</div>
                             <div class="tech-badge">Bash</div>
+                            <div class="tech-badge">PowerShell</div>
+                            <div class="tech-badge">Linux</div>
+                            <div class="tech-badge">Windows</div>
+                            <div class="tech-badge">Android</div>
+                            <div class="tech-badge">CMake</div>
+                            <div class="tech-badge">Protobuf</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- About Section -->
-            <section id="about" class="section section-about">
+            <section id="skills" class="section section-skills">
                 <div class="container">
-                    <h2 class="section-title" data-i18n="about_title">Обо мне</h2>
-                    <div class="about-content">
-                        <div class="about-text">
-                            <h3 data-i18n="about_professional"></h3>
-                            <p data-i18n="about_professional_p1"></p>
-                            <p data-i18n="about_professional_p2"></p>
+                    <h2 class="section-title" data-i18n="skills_title"></h2>
 
-                            <h3 data-i18n="about_education"></h3>
-                            <p data-i18n="about_education_p1"></p>
-                            <p data-i18n="about_education_p2"></p>
+                    <div class="skills-container">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-i18n="skills_languages"></h4>
+                                    <p data-i18n="skills_languages_items"></p>
+                                </div>
+                            </div>
 
-                            <h3 data-i18n="about_approach"></h3>
-                            <p data-i18n="about_approach_p1"></p>
-                        </div>
-                        <div class="about-highlights">
-                            <div class="highlight-box">
-                                <i class="fas fa-code"></i>
-                                <h4 data-i18n="about_highlights_experience"></h4>
-                                <span data-i18n="about_highlights_experience_sub"></span>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-i18n="skills_cpp_tooling"></h4>
+                                    <p data-i18n="skills_cpp_tooling_items"></p>
+                                </div>
                             </div>
-                            <div class="highlight-box">
-                                <i class="fas fa-laptop-code"></i>
-                                <h4 data-i18n="about_highlights_system"></h4>
-                                <span data-i18n="about_highlights_system_sub"></span>
+
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-i18n="skills_platforms"></h4>
+                                    <p data-i18n="skills_platforms_items"></p>
+                                </div>
                             </div>
-                            <div class="highlight-box">
-                                <i class="fas fa-mobile-alt"></i>
-                                <h4 data-i18n="about_highlights_android"></h4>
-                                <span data-i18n="about_highlights_android_sub"></span>
+
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-i18n="skills_android_reverse"></h4>
+                                    <p data-i18n="skills_android_reverse_items"></p>
+                                </div>
                             </div>
-                            <div class="highlight-box">
-                                <i class="fas fa-bug"></i>
-                                <h4 data-i18n="about_highlights_reverse"></h4>
-                                <span data-i18n="about_highlights_reverse_sub"></span>
+
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-i18n="skills_graphics"></h4>
+                                    <p data-i18n="skills_graphics_items"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Work Experience Section -->
             <section id="experience" class="section section-experience">
                 <div class="container">
                     <h2 class="section-title" data-i18n="experience_title"></h2>
@@ -126,31 +133,21 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">
                                 <span data-i18n="exp_date_1"></span>
-                                <span data-i18n="exp_duration_1"></span>
                             </div>
                             <div class="timeline-content">
                                 <h3 data-i18n="exp_position_1"></h3>
                                 <h4 data-i18n="exp_company_1"></h4>
+                                <p data-i18n="exp_location_1"></p>
                                 <div class="experience-details">
-                                    <h5 data-i18n="exp_category_1_1"></h5>
                                     <ul>
-                                        <li data-i18n="exp_item_1_1_1"></li>
-                                        <li data-i18n="exp_item_1_1_2"></li>
-                                        <li data-i18n="exp_item_1_1_3"></li>
-                                        <li data-i18n="exp_item_1_1_4"></li>
-                                    </ul>
-
-                                    <h5 data-i18n="exp_category_1_2"></h5>
-                                    <ul>
-                                        <li data-i18n="exp_item_1_2_1"></li>
-                                        <li data-i18n="exp_item_1_2_2"></li>
-                                    </ul>
-
-                                    <h5 data-i18n="exp_category_1_3"></h5>
-                                    <ul>
-                                        <li data-i18n="exp_item_1_3_1"></li>
-                                        <li data-i18n="exp_item_1_3_2"></li>
-                                        <li data-i18n="exp_item_1_3_3"></li>
+                                        <li data-i18n="exp_item_1_1"></li>
+                                        <li data-i18n="exp_item_1_2"></li>
+                                        <li data-i18n="exp_item_1_3"></li>
+                                        <li data-i18n="exp_item_1_4"></li>
+                                        <li data-i18n="exp_item_1_5"></li>
+                                        <li data-i18n="exp_item_1_6"></li>
+                                        <li data-i18n="exp_item_1_7"></li>
+                                        <li data-i18n="exp_item_1_8"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -160,13 +157,12 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">
                                 <span data-i18n="exp_date_2"></span>
-                                <span data-i18n="exp_duration_2"></span>
                             </div>
                             <div class="timeline-content">
                                 <h3 data-i18n="exp_position_2"></h3>
                                 <h4 data-i18n="exp_company_2"></h4>
+                                <p data-i18n="exp_location_2"></p>
                                 <div class="experience-details">
-                                    <p data-i18n="exp_desc_2"></p>
                                     <ul>
                                         <li data-i18n="exp_item_2_1"></li>
                                         <li data-i18n="exp_item_2_2"></li>
@@ -181,24 +177,31 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-date">
                                 <span data-i18n="exp_date_3"></span>
-                                <span data-i18n="exp_duration_3"></span>
                             </div>
                             <div class="timeline-content">
                                 <h3 data-i18n="exp_position_3"></h3>
-                                <h4 data-i18n="exp_company_3_1"></h4>
+                                <h4 data-i18n="exp_company_3"></h4>
+                                <p data-i18n="exp_location_3"></p>
                                 <div class="experience-details">
                                     <ul>
-                                        <li data-i18n="exp_item_3_1_1"></li>
-                                        <li data-i18n="exp_item_3_1_2"></li>
-                                        <li data-i18n="exp_item_3_1_3"></li>
+                                        <li data-i18n="exp_item_3_1"></li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
 
-                                <h4 data-i18n="exp_company_3_2"></h4>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span data-i18n="exp_date_4"></span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 data-i18n="exp_position_4"></h3>
+                                <h4 data-i18n="exp_company_4"></h4>
+                                <p data-i18n="exp_location_4"></p>
                                 <div class="experience-details">
                                     <ul>
-                                        <li data-i18n="exp_item_3_2_1"></li>
-                                        <li data-i18n="exp_item_3_2_2"></li>
+                                        <li data-i18n="exp_item_4_1"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -207,282 +210,50 @@
                 </div>
             </section>
 
-            <!-- Skills Section -->
-            <section id="skills" class="section section-skills">
-                <div class="container">
-                    <h2 class="section-title" data-i18n="skills_title"></h2>
-
-                    <div class="skills-container">
-                        <div class="skills-category">
-                            <h3 data-i18n="skills_languages"></h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
-                                    <div class="skill-info">
-                                        <h4>C/C++</h4>
-                                        <div class="skill-level expert">
-                                            <span data-i18n="skills_level_cpp"></span>
-                                            <div class="skill-bar">
-                                                <div style="width: 95%"></div>
-                                            </div>
-                                        </div>
-                                        <p data-i18n="skills_desc_cpp"></p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-python"></i></div>
-                                    <div class="skill-info">
-                                        <h4>Python</h4>
-                                        <div class="skill-level advanced">
-                                            <span data-i18n="skills_level_python"></span>
-                                            <div class="skill-bar">
-                                                <div style="width: 60%"></div>
-                                            </div>
-                                        </div>
-                                        <p data-i18n="skills_desc_python"></p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-java"></i></div>
-                                    <div class="skill-info">
-                                        <h4>Java/Kotlin</h4>
-                                        <div class="skill-level intermediate">
-                                            <span data-i18n="skills_level_java_kotlin"></span>
-                                            <div class="skill-bar">
-                                                <div style="width: 55%"></div>
-                                            </div>
-                                        </div>
-                                        <p data-i18n="skills_desc_java_kotlin"></p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fas fa-hashtag"></i></div>
-                                    <div class="skill-info">
-                                        <h4>C#</h4>
-                                        <div class="skill-level intermediate">
-                                            <span data-i18n="skills_level_java_csharp"></span>
-                                            <div class="skill-bar">
-                                                <div style="width: 40%"></div>
-                                            </div>
-                                        </div>
-                                        <p data-i18n="skills_desc_csharp"></p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                    <div class="skill-info">
-                                        <h4>SQL</h4>
-                                        <div class="skill-level intermediate">
-                                            <span data-i18n="skills_level_sql"></span>
-                                            <div class="skill-bar">
-                                                <div style="width: 35%"></div>
-                                            </div>
-                                        </div>
-                                        <p data-i18n="skills_desc_sql"></p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                                    <div class="skill-info">
-                                        <h4>Bash/PowerShell</h4>
-                                        <div class="skill-level advanced">
-                                            <span data-i18n="skills_level_scripting"></span>
-                                            <div class="skill-bar">
-                                                <div style="width: 75%"></div>
-                                            </div>
-                                        </div>
-                                        <p data-i18n="skills_desc_scripting"></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h3 data-i18n="skills_system">Системное программирование</h3>
-                            <div class="skills-list">
-                                <div data-i18n="sys_skill_1" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_2" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_3" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_4" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_5" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_6" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_7" class="skill-tag"></div>
-                                <div data-i18n="sys_skill_8" class="skill-tag"></div>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h3 data-i18n="skills_tools"></h3>
-                            <div class="tools-grid">
-                                <div class="tools-column">
-                                    <h4 data-i18n="skills_compilers"></h4>
-                                    <ul>
-                                        <li class="highlight">Clang++</li>
-                                        <li>G++</li>
-                                        <li>MSVC</li>
-                                    </ul>
-
-                                    <h4 data-i18n="skills_ide"></h4>
-                                    <ul>
-                                        <li class="highlight">Visual Studio Code</li>
-                                        <li>NeoVim</li>
-                                        <li>Visual Studio</li>
-                                        <li>Qt Creator</li>
-                                    </ul>
-                                </div>
-
-                                <div class="tools-column">
-                                    <h4 data-i18n="skills_build"></h4>
-                                    <ul>
-                                        <li class="highlight">CMake</li>
-                                        <li>Conan</li>
-                                    </ul>
-
-                                    <h4 data-i18n="skills_tests"></h4>
-                                    <ul>
-                                        <li>Google Test</li>
-                                        <li>Google Mock</li>
-                                        <li>Google Benchmark</li>
-                                        <li>gcovr</li>
-                                    </ul>
-                                </div>
-
-                                <div class="tools-column">
-                                    <h4 data-i18n="skills_libraries"></h4>
-                                    <ul>
-                                        <li>STL</li>
-                                        <li>Boost</li>
-                                        <li>Qt Framework</li>
-                                    </ul>
-
-                                    <h4 data-i18n="skills_other"></h4>
-                                    <ul>
-                                        <li>Git</li>
-                                        <li>Docker</li>
-                                        <li>PostgreSQL, SQLite</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h3 data-i18n="skills_methodologies">Методологии разработки</h3>
-                            <div class="skills-list">
-                                <div data-i18n="method_skill_1" class="skill-tag"></div>
-                                <div data-i18n="method_skill_2" class="skill-tag"></div>
-                                <div data-i18n="method_skill_3" class="skill-tag"></div>
-                                <div data-i18n="method_skill_4" class="skill-tag"></div>
-                                <div data-i18n="method_skill_5" class="skill-tag"></div>
-                                <div data-i18n="method_skill_6" class="skill-tag"></div>
-                                <div data-i18n="method_skill_7" class="skill-tag"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
             <section id="projects" class="section section-projects">
                 <div class="container">
                     <h2 class="section-title" data-i18n="projects_title"></h2>
                     <div class="projects-grid">
                         <div class="project-card">
                             <div class="project-header">
-                                <h3 class="project-title">MEOV</h3>
+                                <h3 class="project-title" data-i18n="project_1_title"></h3>
                                 <div class="project-links">
-                                    <a href="https://github.com/seigtm/meov" target="_blank" class="project-link">
+                                    <a href="https://github.com/seigtm/meov" target="_blank" rel="noopener noreferrer"
+                                        class="project-link" aria-label="MEOV GitHub">
                                         <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
-                            <p class="project-subtitle" data-i18n="project_1_subtitle"></p>
-                            <p class="project-description" data-i18n="project_1_desc"></p>
                             <div class="project-features">
                                 <ul>
-                                    <li data-i18n="project_1_feat_1"></li>
-                                    <li data-i18n="project_1_feat_2"></li>
-                                    <li data-i18n="project_1_feat_3"></li>
+                                    <li data-i18n="project_1_item_1"></li>
+                                    <li data-i18n="project_1_item_2"></li>
+                                    <li data-i18n="project_1_item_3"></li>
+                                    <li data-i18n="project_1_item_4"></li>
+                                    <li data-i18n="project_1_item_5"></li>
                                 </ul>
                             </div>
                             <div class="project-tech">
-                                <span class="tech-tag">C++17</span>
+                                <span class="tech-tag">C++</span>
                                 <span class="tech-tag">OpenGL</span>
+                                <span class="tech-tag">SDL</span>
+                                <span class="tech-tag">Dear ImGui</span>
+                                <span class="tech-tag">Assimp</span>
                                 <span class="tech-tag">GLSL</span>
                                 <span class="tech-tag">CMake</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title">setm::math</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/seigtm/setm-math" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project-subtitle" data-i18n="project_2_subtitle"></p>
-                            <p class="project-description" data-i18n="project_2_desc"></p>
-                            <div class="project-features">
-                                <ul>
-                                    <li data-i18n="project_2_feat_1"></li>
-                                    <li data-i18n="project_2_feat_2"></li>
-                                    <li data-i18n="project_2_feat_3"></li>
-                                    <li data-i18n="project_2_feat_4"></li>
-                                </ul>
-                            </div>
-                            <div class="project-tech">
-                                <span class="tech-tag">C++</span>
-                                <span class="tech-tag">CMake</span>
-                                <span class="tech-tag">Conan</span>
-                                <span class="tech-tag">Google Test</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title">WMS</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/seigtm/Qt-WMS" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project-subtitle" data-i18n="project_3_subtitle"></p>
-                            <p class="project-description" data-i18n="project_3_desc"></p>
-                            <div class="project-features">
-                                <ul>
-                                    <li data-i18n="project_3_feat_1"></li>
-                                    <li data-i18n="project_3_feat_2"></li>
-                                    <li data-i18n="project_3_feat_3"></li>
-                                    <li data-i18n="project_3_feat_4"></li>
-                                    <li data-i18n="project_3_feat_5"></li>
-                                </ul>
-                            </div>
-                            <div class="project-tech">
-                                <span class="tech-tag">C++</span>
-                                <span class="tech-tag">Qt</span>
-                                <span class="tech-tag">SQLite3</span>
-                                <span class="tech-tag">SHA256</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="github-cta">
                         <a href="https://github.com/seigtm" class="btn btn-outline" target="_blank"
-                            data-i18n="projects_github_cta">
+                            rel="noopener noreferrer" data-i18n="projects_github_cta">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
             </section>
 
-            <!-- Education Section -->
             <section id="education" class="section section-education">
                 <div class="container">
                     <h2 class="section-title" data-i18n="education_title"></h2>
@@ -492,11 +263,9 @@
                                 <i class="fas fa-university"></i>
                             </div>
                             <div class="education-content">
-                                <h3 data-i18n="education_higher"></h3>
-                                <h4 data-i18n="education_univ_name"></h4>
-                                <p data-i18n="education_univ_faculty"></p>
-                                <p data-i18n="education_univ_major"></p>
-                                <span class="education-period" data-i18n="education_univ_period"></span>
+                                <h3 data-i18n="education_univ_name"></h3>
+                                <h4 data-i18n="education_univ_period"></h4>
+                                <p data-i18n="education_univ_degree"></p>
                             </div>
                         </div>
 
@@ -505,57 +274,33 @@
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
                             <div class="education-content">
-                                <h3 data-i18n="education_college"></h3>
-                                <h4 data-i18n="education_college_name"></h4>
-                                <div class="qualification">
-                                    <p data-i18n="education_qual_1"></p>
-                                    <span class="diploma-honor" data-i18n="education_honor_1"></span>
-                                </div>
-                                <div class="qualification">
-                                    <p data-i18n="education_qual_2"></p>
-                                    <span class="diploma-honor" data-i18n="education_honor_2"></span>
-                                </div>
-                                <span class="education-period" data-i18n="education_college_period"></span>
-                            </div>
-                        </div>
-
-                        <div class="education-card">
-                            <div class="education-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div class="education-content">
-                                <h3 data-i18n="education_additional"></h3>
-                                <ul class="courses-list">
-                                    <li data-i18n="education_course_1"></li>
-                                    <li data-i18n="education_course_2"></li>
-                                </ul>
+                                <h3 data-i18n="education_college_name"></h3>
+                                <h4 data-i18n="education_college_period"></h4>
+                                <p data-i18n="education_college_degree"></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Contact Section -->
             <section id="contacts" class="section section-contacts">
                 <div class="container">
                     <h2 class="section-title" data-i18n="contacts_title"></h2>
                     <div class="contacts-container">
-                        <div class="preferred-contact">
-                            <h3 data-i18n="contacts_preferred"></h3>
-                            <div class="contact-item telegram">
-                                <div class="contact-icon">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </div>
-                                <div class="contact-info">
-                                    <h4>Telegram</h4>
-                                    <a href="https://t.me/seigtm" target="_blank">@seigtm</a>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="other-contacts">
                             <h3 data-i18n="contacts_other"></h3>
                             <div class="contact-list">
+                                <div class="contact-item telegram">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4>Telegram</h4>
+                                        <a href="https://t.me/seigtm" target="_blank"
+                                            rel="noopener noreferrer">@seigtm</a>
+                                    </div>
+                                </div>
+
                                 <div class="contact-item">
                                     <div class="contact-icon">
                                         <i class="fas fa-phone"></i>
@@ -578,11 +323,34 @@
 
                                 <div class="contact-item">
                                     <div class="contact-icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4>LinkedIn</h4>
+                                        <a href="https://www.linkedin.com/in/seigtm" target="_blank"
+                                            rel="noopener noreferrer">linkedin.com/in/seigtm</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">
                                         <i class="fab fa-github"></i>
                                     </div>
                                     <div class="contact-info">
                                         <h4>GitHub</h4>
-                                        <a href="https://github.com/seigtm" target="_blank">github.com/seigtm</a>
+                                        <a href="https://github.com/seigtm" target="_blank"
+                                            rel="noopener noreferrer">github.com/seigtm</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4 data-i18n="contacts_website"></h4>
+                                        <a href="https://seigtm.github.io" target="_blank"
+                                            rel="noopener noreferrer">seigtm.github.io</a>
                                     </div>
                                 </div>
 
@@ -595,6 +363,21 @@
                                         <p data-i18n="contacts_address"></p>
                                     </div>
                                 </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-language"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4 data-i18n="contacts_languages"></h4>
+                                        <p>
+                                            <span data-i18n="contacts_languages_native"></span><br>
+                                            <span data-i18n="contacts_languages_english"></span>
+                                            (<a href="https://cert.efset.org/du7yCw" target="_blank"
+                                                rel="noopener noreferrer">cert.efset.org/du7yCw</a>)
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -602,7 +385,6 @@
             </section>
         </main>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -610,15 +392,21 @@
                         <p data-i18n="footer_copyright"></p>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/seigtm" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://t.me/seigtm" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://github.com/seigtm" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/seigtm" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/seigtm" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
 
-    <!-- Include scripts -->
     <script src="js/translations.js"></script>
     <script src="js/language.js"></script>
     <script src="js/main.js"></script>

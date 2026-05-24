@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (pdfButton) {
         pdfButton.addEventListener('click', () => {
-            // Get current language and open appropriate PDF
             const currentLang = window.getCurrentLanguage ? window.getCurrentLanguage() : 'ru';
-            const pdfPath = `src/resume_${currentLang}.pdf`;
-            window.open(pdfPath, '_blank');
+            const pdfUrls = {
+                en: 'https://raw.githubusercontent.com/seigtm/cv/master/cv_en.pdf',
+                ru: 'https://raw.githubusercontent.com/seigtm/cv/master/cv_ru.pdf'
+            };
+            window.open(pdfUrls[currentLang] || pdfUrls.ru, '_blank');
         });
     }
 
@@ -88,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Animation on scroll
     const animateOnScroll = () => {
-        const elementsToAnimate = document.querySelectorAll('.project-card, .highlight-box, .timeline-item, .skill-item, .education-card');
+        const elementsToAnimate = document.querySelectorAll('.project-card, .timeline-item, .skill-item, .education-card, .contact-item');
 
         elementsToAnimate.forEach(element => {
             const position = element.getBoundingClientRect();
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize CSS for animations
     const styleElement = document.createElement('style');
     styleElement.innerHTML = `
-        .project-card, .highlight-box, .timeline-item, .skill-item, .education-card {
+        .project-card, .timeline-item, .skill-item, .education-card, .contact-item {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -121,14 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .timeline-item:nth-child(3) { transition-delay: 0.3s; }
         .timeline-item:nth-child(4) { transition-delay: 0.4s; }
 
-        .highlight-box:nth-child(1) { transition-delay: 0.1s; }
-        .highlight-box:nth-child(2) { transition-delay: 0.2s; }
-        .highlight-box:nth-child(3) { transition-delay: 0.3s; }
-        .highlight-box:nth-child(4) { transition-delay: 0.4s; }
-
         .project-card:nth-child(1) { transition-delay: 0.1s; }
-        .project-card:nth-child(2) { transition-delay: 0.2s; }
-        .project-card:nth-child(3) { transition-delay: 0.3s; }
     `;
     document.head.appendChild(styleElement);
 

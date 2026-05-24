@@ -38,6 +38,19 @@ function initLanguageManager() {
             }
         });
 
+        [
+            { selector: '[data-i18n-alt]', dataAttribute: 'data-i18n-alt', targetAttribute: 'alt' },
+            { selector: '[data-i18n-content]', dataAttribute: 'data-i18n-content', targetAttribute: 'content' }
+        ].forEach(({ selector, dataAttribute, targetAttribute }) => {
+            document.querySelectorAll(selector).forEach(element => {
+                const key = element.getAttribute(dataAttribute);
+
+                if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                    element.setAttribute(targetAttribute, translations[currentLanguage][key]);
+                }
+            });
+        });
+
         // Update toggle buttons to reflect current language
         updateLanguageToggle();
 

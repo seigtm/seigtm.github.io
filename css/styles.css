@@ -44,6 +44,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     background-color: var(--color-background);
+    overflow-x: hidden;
 }
 
 /* Typography */
@@ -314,6 +315,7 @@ li {
 
 .hero-text {
     margin-bottom: var(--spacing-xl);
+    min-width: 0;
 }
 
 .hero-text h1 {
@@ -340,6 +342,7 @@ li {
     font-size: 1.25rem;
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-lg);
+    overflow-wrap: anywhere;
 }
 
 .hero-cta {
@@ -353,6 +356,7 @@ li {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: var(--spacing-md);
+    max-width: 100%;
 }
 
 .tech-badge {
@@ -497,11 +501,14 @@ li {
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-small);
+    min-width: 0;
 }
 
 .skill-icon {
     width: 50px;
     height: 50px;
+    flex: 0 0 50px;
+    aspect-ratio: 1;
     background-color: rgba(24, 144, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -514,6 +521,7 @@ li {
 
 .skill-info {
     flex-grow: 1;
+    min-width: 0;
 }
 
 .skill-info h4 {
@@ -561,6 +569,7 @@ li {
     font-size: 0.875rem;
     margin: 0.25rem 0 0;
     color: var(--color-text-secondary);
+    overflow-wrap: anywhere;
 }
 
 .skills-list {
@@ -622,8 +631,8 @@ li {
 /* Projects section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: var (--spacing-lg);
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
 
@@ -676,9 +685,14 @@ li {
 .project-description {
     font-size: 0.95rem;
     margin-bottom: var(--spacing-sm);
+    overflow-wrap: anywhere;
 }
 
 .project-features ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--spacing-xl);
+    row-gap: var(--spacing-xs);
     padding-left: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
 }
@@ -707,7 +721,7 @@ li {
 /* Education section */
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--spacing-lg);
 }
 
@@ -767,7 +781,7 @@ li {
 .diploma-honor {
     font-size: 0.8rem;
     background-color: rgba(245, 34, 45, 0.1);
-    color: var (--color-danger);
+    color: var(--color-danger);
     padding: 0.1rem 0.5rem;
     border-radius: 100px;
     font-weight: 500;
@@ -785,17 +799,7 @@ li {
 
 /* Contact section */
 .contacts-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--spacing-lg);
-}
-
-.preferred-contact {
-    background-color: white;
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-small);
-    grid-row: span 2;
+    display: block;
 }
 
 .contact-item {
@@ -811,6 +815,8 @@ li {
 .contact-icon {
     width: 40px;
     height: 40px;
+    flex: 0 0 40px;
+    aspect-ratio: 1;
     background-color: rgba(24, 144, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -831,17 +837,26 @@ li {
     font-size: 1rem;
 }
 
+.contact-info {
+    min-width: 0;
+}
+
+.contact-info a,
+.contact-info p {
+    overflow-wrap: anywhere;
+}
+
 .other-contacts {
     background-color: white;
-    padding: var (--spacing-lg);
+    padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-small);
 }
 
 .contact-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-lg) var(--spacing-xl);
     margin-top: var(--spacing-md);
 }
 
@@ -935,8 +950,8 @@ li {
         grid-template-columns: 1fr;
     }
 
-    .preferred-contact {
-        grid-row: auto;
+    .contact-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -966,7 +981,7 @@ li {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: transform var(--transition-speed), opacity var (--transition-speed), visibility var(--transition-speed);
+        transition: transform var(--transition-speed), opacity var(--transition-speed), visibility var(--transition-speed);
     }
 
     .nav-links.active {
@@ -1019,14 +1034,29 @@ li {
         grid-template-columns: 1fr;
     }
 
+    .project-features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid,
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        width: 100%;
     }
 
     .hero-text {
         margin-top: var(--spacing-md);
+        width: 100%;
+    }
+
+    .hero-tech-stack {
+        justify-content: center;
     }
 
     .language-toggle {
