@@ -1,7 +1,7 @@
 const translations = {
     en: {
         "page_title": "Konstantin Baranov | C++ Software Engineer",
-        "page_description": "Konstantin Baranov | C++ Software Engineer | 3+ years of professional experience | Saint Petersburg, Russia | On-site / hybrid / remote | Open to relocation",
+        "page_description": "Konstantin Baranov | C++ Software Engineer | 4+ years of professional experience | Saint Petersburg, Russia | On-site / hybrid / remote | Open to relocation",
 
         "nav_home": "Home",
         "nav_skills": "Skills",
@@ -12,7 +12,7 @@ const translations = {
 
         "hero_name": "Konstantin Baranov",
         "hero_title": "C++ Software Engineer",
-        "hero_subtitle": "3+ years of professional experience | Saint Petersburg, Russia | On-site / hybrid / remote | Open to relocation",
+        "hero_subtitle": "4+ years of professional experience | Saint Petersburg, Russia | On-site / hybrid / remote | Open to relocation",
         "resume_pdf": "PDF Resume",
         "hero_btn_contact": "Contacts",
 
@@ -94,7 +94,7 @@ const translations = {
     },
     ru: {
         "page_title": "Баранов Константин | C++ Software Engineer",
-        "page_description": "Баранов Константин | C++ Software Engineer | 3+ года профессионального опыта | Санкт-Петербург, Россия | Офис / гибрид / удалённо | Готов к релокации",
+        "page_description": "Баранов Константин | C++ Software Engineer | 4+ года профессионального опыта | Санкт-Петербург, Россия | Офис / гибрид / удалённо | Готов к релокации",
 
         "nav_home": "Главная",
         "nav_skills": "Навыки",
@@ -105,7 +105,7 @@ const translations = {
 
         "hero_name": "Баранов Константин",
         "hero_title": "C++ Software Engineer",
-        "hero_subtitle": "3+ года профессионального опыта | Санкт-Петербург, Россия | Офис / гибрид / удалённо | Готов к релокации",
+        "hero_subtitle": "4+ года профессионального опыта | Санкт-Петербург, Россия | Офис / гибрид / удалённо | Готов к релокации",
         "resume_pdf": "Резюме в PDF",
         "hero_btn_contact": "Контакты",
 
