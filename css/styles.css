@@ -966,11 +966,12 @@ li {
 
     .nav-container {
         padding: 0.75rem var(--spacing-md);
+        position: relative;
     }
 
     .nav-links {
-        position: fixed;
-        top: 60px;
+        position: absolute;
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--color-background);
