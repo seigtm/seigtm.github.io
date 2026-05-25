@@ -305,8 +305,8 @@ li {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: clamp(150px, 16vw, 220px);
+    height: clamp(150px, 16vw, 220px);
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid white;
