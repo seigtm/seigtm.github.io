@@ -1026,6 +1026,10 @@ li {
         gap: var(--spacing-sm);
     }
 
+    .profile-image {
+        object-position: 50% 10%;
+    }
+
     .about-highlights {
         grid-template-columns: 1fr;
     }
@@ -1078,6 +1082,10 @@ li {
 @media (max-width: 480px) {
     .section {
         padding: var(--spacing-xl) 0;
+    }
+
+    .section-hero {
+        padding-top: 7rem;
     }
 
     .container {
