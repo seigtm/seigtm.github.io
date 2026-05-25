@@ -60,9 +60,13 @@ function initLanguageManager() {
 
     // Create and add language toggle to the navigation
     function createLanguageToggle() {
-        const navLinks = document.querySelector('.nav-links');
+        const navContainer = document.querySelector('.nav-container');
 
-        const toggleContainer = document.createElement('li');
+        if (!navContainer) {
+            return;
+        }
+
+        const toggleContainer = document.createElement('div');
         toggleContainer.className = 'language-toggle';
         toggleContainer.innerHTML = `
             <div class="language-selector">
@@ -71,7 +75,7 @@ function initLanguageManager() {
             </div>
         `;
 
-        navLinks.appendChild(toggleContainer);
+        navContainer.appendChild(toggleContainer);
 
         // Add click handlers to language buttons
         const langButtons = document.querySelectorAll('.language-btn');

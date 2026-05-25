@@ -236,6 +236,7 @@ li {
     margin: 0;
     padding: 0;
     align-items: center;
+    margin-left: auto;
 }
 
 .nav-links li {
@@ -967,6 +968,8 @@ li {
     .nav-container {
         padding: 0.75rem var(--spacing-md);
         position: relative;
+        justify-content: flex-start;
+        gap: var(--spacing-sm);
     }
 
     .nav-links {
@@ -1008,6 +1011,7 @@ li {
 
     .hamburger {
         display: flex;
+        order: 3;
     }
 
     .hamburger.active span:nth-child(1) {
@@ -1065,17 +1069,17 @@ li {
     }
 
     .language-toggle {
-        margin: 0.5rem 0;
+        order: 2;
+        margin-left: auto;
     }
 
     .language-selector {
-        justify-content: center;
-        width: 120px;
-        margin: 0 auto;
+        width: auto;
+        margin: 0;
     }
 
     .language-btn {
-        flex: 1;
+        flex: 0 0 auto;
         text-align: center;
     }
 }
