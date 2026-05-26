@@ -87,7 +87,7 @@ const translations = {
         "contacts_languages_native": "Russian: native",
         "contacts_languages_english": "English: C2 Proficient, EF SET 71/100",
 
-        "footer_copyright": "© 2026 Konstantin Baranov. All rights reserved."
+        "footer_copyright": "© 2026 Konstantin Baranov. Source code: 0BSD. Personal materials: all rights reserved."
     },
     ru: {
         "page_title": "Баранов Константин | C++ Software Engineer",
@@ -177,6 +177,6 @@ const translations = {
         "contacts_languages_native": "Русский: родной",
         "contacts_languages_english": "Английский: C2 Proficient, EF SET 71/100",
 
-        "footer_copyright": "© 2026 Баранов Константин. Все права защищены."
+        "footer_copyright": "© 2026 Баранов Константин. Исходный код: 0BSD. Личные материалы: все права защищены."
     }
 };
